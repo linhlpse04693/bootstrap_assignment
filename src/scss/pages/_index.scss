@@ -1,35 +1,31 @@
 .index-page {
-  .phone {
-    background: url('~images/gray-bg.jpg') no-repeat center center;
-    background-size: cover;
-    background-attachment: fixed;
-    overflow: hidden;
-    // position: relative;
+  &__section {
+    min-height: 100px;
+    background-color: violet;
+    margin-bottom: 20px;
+    
+    // @media screen and (max-width: $md) {
+    //   background-color: red;
+    // }
 
-    &-col {
-      width: 50%;
-      float: left;
+    // @media screen and (min-width: $lg) {
+    //   background-color: green;
+    // }
+
+    @include respond-below('md') {
+      background-color: green;
+
+      &__heading {
+        color: blue;
+      }
     }
+    .intro {
+      &__heading {
+        color: red;
+      }
 
-    &-content {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
-
-    &-para {
-      width: 50%;
-      padding-right: 30px;
-      box-sizing: border-box;
-    }
-
-    &:after {
-      display: block;
-      content: '';
-      width: 0;
-      height: 0;
-      border-right: 100vw solid red;
-      border-top: 100px solid transparent;
+      &__desc {
+      }
     }
   }
 }
