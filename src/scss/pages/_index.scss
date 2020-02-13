@@ -1,0 +1,370 @@
+.index-page {
+  &__intro {
+    background: url('~images/bg-header.jpeg') no-repeat scroll center;
+    background-size: cover;
+  }
+}
+
+@include respond-below('sm') {
+  .index-page {
+    &__intro {
+      padding-top: 10rem;
+      padding-bottom: calc(10rem - 72px);
+      background: url('~images/bg-header.jpeg') no-repeat scroll center;
+      background-size: cover;
+      min-height: 100vh;
+
+      &__heading {
+        font-size: 36px;
+
+        &__divider {
+          max-width: 3.25rem;
+          border-width: .2rem;
+          border-color: $primary;
+        }
+      }
+
+      &__description {
+        font-size: 18px;
+        color: $light;
+      }
+    }
+
+    &__about {
+      padding: 120px 0;
+
+      &__heading {
+        font-size: 31px;
+      }
+
+      &__divider {
+        max-width: 3.25rem;
+        border-width: .2rem;
+        border-color: $light;
+      }
+    }
+
+    &__service {
+      padding: 120px 0;
+
+      &__divider {
+        max-width: 3.25rem;
+        border-width: .2rem;
+        border-color: $primary;
+      }
+    }
+
+    &__images {
+      &__image {
+        width: 100%;
+      }
+
+      &__description {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        background-color: rgba(244, 98, 58, 0.9);
+      }
+
+      &__description:hover {
+        z-index: 999;
+      }
+
+      &__image:hover + &__description {
+        z-index: 999;
+      }
+    }
+
+    &__download {
+      padding: 120px 0;
+
+      &__button:hover {
+        background-color: #E2E6EA;
+      }
+    }
+
+    &__contact {
+      padding: 120px 0;
+
+      &__divider {
+        max-width: 3.25rem;
+        border-width: .2rem;
+        border-color: $primary;
+      }
+    }
+  }
+}
+
+@include respond-above('sm') {
+  .index-page {
+    &__intro {
+      padding-top: 10rem;
+      padding-bottom: calc(10rem - 72px);
+      background: url('~images/bg-header.jpeg') no-repeat scroll center;
+      background-size: cover;
+      min-height: 100vh;
+
+      &__heading {
+        font-size: 36px;
+
+        &__divider {
+          max-width: 3.25rem;
+          border-width: .2rem;
+          border-color: $primary;
+        }
+      }
+
+      &__description {
+        font-size: 18px;
+        color: $light;
+      }
+    }
+
+    &__about {
+      padding: 120px 0;
+
+      &__heading {
+        font-size: 31px;
+      }
+
+      &__divider {
+        max-width: 3.25rem;
+        border-width: .2rem;
+        border-color: $light;
+      }
+    }
+
+    &__service {
+      padding: 120px 0;
+
+      &__divider {
+        max-width: 3.25rem;
+        border-width: .2rem;
+        border-color: $primary;
+      }
+    }
+
+    &__images {
+      &__image {
+        width: 100%;
+      }
+
+      &__description {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        background-color: rgba(244, 98, 58, 0.9);
+      }
+
+      &__description:hover {
+        z-index: 999;
+      }
+
+      &__image:hover + &__description {
+        z-index: 999;
+      }
+    }
+
+    &__download {
+      padding: 120px 0;
+
+      &__button:hover {
+        background-color: #E2E6EA;
+      }
+    }
+
+    &__contact {
+      padding: 120px 0;
+
+      &__divider {
+        max-width: 3.25rem;
+        border-width: .2rem;
+        border-color: $primary;
+      }
+    }
+  }
+}
+
+@include respond-above('md') {
+  .index-page {
+    &__intro {
+      padding-top: 10rem;
+      padding-bottom: calc(10rem - 72px);
+      background: url('~images/bg-header.jpeg') no-repeat scroll center;
+      background-size: cover;
+      min-height: 100vh;
+
+      &__heading {
+        font-size: 36px;
+
+        &__divider {
+          max-width: 3.25rem;
+          border-width: .2rem;
+          border-color: $primary;
+        }
+      }
+
+      &__description {
+        font-size: 18px;
+        color: $light;
+      }
+    }
+
+    &__about {
+      padding: 120px 0;
+
+      &__heading {
+        font-size: 31px;
+      }
+
+      &__divider {
+        max-width: 3.25rem;
+        border-width: .2rem;
+        border-color: $light;
+      }
+    }
+
+    &__service {
+      padding: 120px 0;
+
+      &__divider {
+        max-width: 3.25rem;
+        border-width: .2rem;
+        border-color: $primary;
+      }
+    }
+
+    &__images {
+      &__image {
+        width: 100%;
+      }
+
+      &__description {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        background-color: rgba(244, 98, 58, 0.9);
+      }
+
+      &__description:hover {
+        z-index: 999;
+      }
+
+      &__image:hover + &__description {
+        z-index: 999;
+      }
+    }
+
+    &__download {
+      padding: 120px 0;
+
+      &__button:hover {
+        background-color: #E2E6EA;
+      }
+    }
+
+    &__contact {
+      padding: 120px 0;
+
+      &__divider {
+        max-width: 3.25rem;
+        border-width: .2rem;
+        border-color: $primary;
+      }
+    }
+  }
+}
+
+@include respond-above('lg') {
+  .index-page {
+    &__intro {
+      padding-top: 10rem;
+      padding-bottom: calc(10rem - 72px);
+      background: url('~images/bg-header.jpeg') no-repeat scroll center;
+      background-size: cover;
+      min-height: 100vh;
+
+      &__heading {
+        font-size: 3.5rem;
+
+        &__divider {
+          max-width: 3.25rem;
+          border-width: .2rem;
+          border-color: $primary;
+        }
+      }
+
+      &__description {
+        font-size: 18px;
+        color: $light;
+      }
+    }
+
+    &__about {
+      padding: 120px 0;
+
+      &__heading {
+        font-size: 31px;
+      }
+
+      &__divider {
+        max-width: 3.25rem;
+        border-width: .2rem;
+        border-color: $light;
+      }
+    }
+
+    &__service {
+      padding: 120px 0;
+
+      &__divider {
+        max-width: 3.25rem;
+        border-width: .2rem;
+        border-color: $primary;
+      }
+    }
+
+    &__images {
+      &__image {
+        width: 100%;
+      }
+
+      &__description {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        background-color: rgba(244, 98, 58, 0.9);
+      }
+
+      &__description:hover {
+        z-index: 999;
+      }
+
+      &__image:hover + &__description {
+        z-index: 999;
+      }
+    }
+
+    &__download {
+      padding: 120px 0;
+
+      &__button:hover {
+        background-color: #E2E6EA;
+      }
+    }
+
+    &__contact {
+      padding: 120px 0;
+
+      &__divider {
+        max-width: 3.25rem;
+        border-width: .2rem;
+        border-color: $primary;
+      }
+    }
+  }
+}

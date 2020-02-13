@@ -1,0 +1,33 @@
+@include respond-above('lg') {
+  .navbar {
+    &__logo:hover {
+      color: #ffffff !important;
+    }
+
+    &__nav-link:hover {
+      color: #ffffff !important;
+    }
+  }
+}
+
+@include respond-below('lg') {
+  .navbar {
+    background-color: $white;
+
+    &__logo {
+      color: $black!important;
+    }
+
+    &__nav-link {
+      color: #6C757D!important;
+    }
+
+    &__logo:hover {
+      color: $black !important;
+    }
+
+    &__nav-link:hover {
+      color: #F4623A !important;
+    }
+  }
+}

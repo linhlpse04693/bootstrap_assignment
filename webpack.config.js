@@ -1,10 +1,18 @@
 var path = require('path');
+var webpack = require('webpack');
 
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var CleanWebpackPlugin = require('clean-webpack-plugin').CleanWebpackPlugin;
 var MiniCssExtractPlugin = require('mini-css-extract-plugin');
 var OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 var TerserJSPlugin = require('terser-webpack-plugin');
+
+class ProvidePlugin extends CleanWebpackPlugin {
+  constructor(param) {
+    super();
+  }
+
+}
 
 module.exports = {
   devServer: {
@@ -41,6 +49,12 @@ module.exports = {
     }),
     new MiniCssExtractPlugin({
       filename: 'styles.min.css'
+    }),
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery',
+      Popper: ['popper.js', 'default']
     })
   ],
   output: {
